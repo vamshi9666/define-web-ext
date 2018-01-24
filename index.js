@@ -1,10 +1,13 @@
 
+
 window.addEventListener('mouseup', wordSelected);
 
 function wordSelected() {
   let selectedText = window.getSelection().toString().trim();
   console.log(selectedText);
   if (selectedText.length > 0) {
+
+    console.log('selected text');
     let message = {
       text: selectedText
     };
