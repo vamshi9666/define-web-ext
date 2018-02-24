@@ -2,7 +2,7 @@ function setup() {
     noCanvas();
   
     let bgpage = chrome.extension.getBackgroundPage();
-    let word = bgpage.word.trim();
+    let word = bgpage.word.trim().toLOwerCase();
   
     let url = `http://api.wordnik.com:80/v4/word.json/${word}/definitions?limit=200&includeRelated=true&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5
     `
