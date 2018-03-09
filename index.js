@@ -4,10 +4,10 @@ window.addEventListener('mouseup', wordSelected);
 
 function wordSelected() {
   let selectedText = window.getSelection().toString().trim();
-  console.log(selectedText);
+  //console.log(selectedText);
   if (selectedText.length > 0) {
 
-    console.log('selected text');
+    console.log(selectedText);
     let message = {
       text: selectedText
     };

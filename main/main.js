@@ -23,6 +23,8 @@ function setup() {
     uploadterm();
     
     function gotData(data) {
+
+      if (data===null){createP("this word dosn't have any given entities")}
       createP(data[0].text ).style('font-size', '48pt');
     }
     function uploadterm(){

@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(receiver);
 
-window.word = "definer ";
+window.word = "definer";
 
 function receiver(request, sender, sendResponse) {
   console.log(request);
